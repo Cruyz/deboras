@@ -7,14 +7,20 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8f8f8;
+            background-image: url('url-da-sua-imagem-romantica.jpg'); /* Adicione a URL da sua imagem de fundo */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             text-align: center;
             margin: 20px;
-            color: #333;
+            color: #fff;
+            overflow: hidden; /* Impede a exibição da barra de rolagem horizontal */
         }
         h1 {
             color: #e74c3c;
             position: relative;
+            margin-top: 20px;
+            font-size: 36px;
         }
         h1::before,
         h1::after {
@@ -32,7 +38,9 @@
             right: -20px;
         }
         p {
-            color: #000;
+            color: #fff;
+            font-size: 18px;
+            line-height: 1.5;
         }
         #mensagem-link {
             color: #2ecc71;
@@ -54,6 +62,7 @@
             transition: transform 0.3s ease-in-out;
             cursor: pointer;
             position: relative;
+            margin-bottom: 10px;
         }
         .mes:hover {
             transform: scale(1.05);
@@ -68,11 +77,34 @@
         #audio-player {
             margin-top: 20px;
         }
+        .coracao-flutuante {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #e74c3c;
+            border-radius: 50%;
+            animation: flutuar 3s infinite;
+        }
+        @keyframes flutuar {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
     </style>
 </head>
 <body>
 
-    <h1>Para minha deb</h1>
+    <h1>Para minha Robótica </h1>
+
+    <!-- Corações flutuantes -->
+    <div class="coracao-flutuante" style="top: 50px; left: 100px;"></div>
+    <div class="coracao-flutuante" style="top: 150px; left: 300px;"></div>
+    <div class="coracao-flutuante" style="top: 300px; left: 200px;"></div>
+    <div class="coracao-flutuante" style="top: 400px; left: 50px;"></div>
+    <div class="coracao-flutuante" style="top: 200px; left: 400px;"></div>
 
     <div class="mes-container">
         <div class="mes" onclick="mostrarMensagem(1)">Mês 1</div>
