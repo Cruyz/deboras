@@ -7,21 +7,14 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-image: url('url-da-sua-imagem-romantica.jpg'); /* Adicione a URL da sua imagem de fundo */
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
+            background-color: #f8f8f8;
             text-align: center;
             margin: 20px;
-            color: #fff;
-            overflow: hidden; /* Impede a exibição da barra de rolagem horizontal */
-            position: relative;
+            color: #333;
         }
         h1 {
             color: #e74c3c;
             position: relative;
-            margin-top: 20px;
-            font-size: 36px;
         }
         h1::before,
         h1::after {
@@ -39,11 +32,7 @@
             right: -20px;
         }
         p {
-            color: #fff;
-            font-size: 18px;
-            line-height: 1.5;
-            text-align: left;
-            margin: 20px;
+            color: #000;
         }
         #mensagem-link {
             color: #2ecc71;
@@ -65,7 +54,6 @@
             transition: transform 0.3s ease-in-out;
             cursor: pointer;
             position: relative;
-            margin-bottom: 10px;
         }
         .mes:hover {
             transform: scale(1.05);
@@ -80,34 +68,11 @@
         #audio-player {
             margin-top: 20px;
         }
-        .coracao-flutuante {
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background-color: #e74c3c;
-            border-radius: 50%;
-            animation: flutuar 3s infinite;
-        }
-        @keyframes flutuar {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-20px);
-            }
-        }
     </style>
 </head>
 <body>
 
-    <h1>Para minha Robótica deb <3</h1>
-
-    <!-- Corações flutuantes -->
-    <div class="coracao-flutuante" style="top: 50px; left: 100px;"></div>
-    <div class="coracao-flutuante" style="top: 150px; left: 300px;"></div>
-    <div class="coracao-flutuante" style="top: 300px; left: 200px;"></div>
-    <div class="coracao-flutuante" style="top: 400px; left: 50px;"></div>
-    <div class="coracao-flutuante" style="top: 200px; left: 400px;"></div>
+    <h1>Para minha Robótica Déb</h1>
 
     <div class="mes-container">
         <div class="mes" onclick="mostrarMensagem(1)">Mês 1</div>
@@ -145,8 +110,8 @@
                     mensagem = "Quatro meses se passaram, e ainda estou me recuperando da perda da minha irmã. Ainda me pergunto como você conseguia me distrair e me fazer feliz em um momento tão sombrio. Existem coisas que apenas o amor é capaz de comprovar; eu me sentia leve quando estava com você. Todos os pensamentos negativos se dissipavam, e todas as lembranças ruins desapareciam.\n\nLembro quando saímos e fomos para o Imbuí, comemos, conversamos, bebemos e até tomamos aqueles drinks caríssimos, mas bonitos, kkkk. Que dia incrível... Não me canso de dizer o quanto você foi e é importante para mim. Você me ajudou a superar tudo o que passei nos últimos dias. Sinto-me o homem mais sortudo do mundo. Lembra quando fomos assistir 'A Freira 2'? Foi um passeio incrível; estávamos tão estilosos com roupas combinando. Somos um casal lindo demais.\n\nNesses quatro meses juntos, não consigo encontrar palavras para descrever o quanto eu te amo. Quem sabe um dia eu consiga.";
                     break;
                 case 5:
-                    mensagem = "Cinco meses, como o tempo passou rápido, não é mesmo? Neste último mês, estamos em uma vibe muito leve. Estou conseguindo lidar com o luto, e você tem me ajudado, ajudado com tudo, na verdade. Quero que saiba que tudo o que estou fazendo hoje é por nós, por nosso futuro. Quero te proporcionar a vida que você merece, realizar todos os seus sonhos - uma casa na praia, livros, gatos, kkk. Nós vamos conseguir tudo isso juntos. Ah, quase me esqueci, você é a mulher mais linda deste mundo. Não estou dizendo isso só porque você é minha namorada, não. Até mesmo antes de trocar uma palavra contigo, eu já admirava a sua beleza, seus olhos, kkkk, seus cabelos, sua boca, é tudo detalhadamente perfeito. Eu te amo sempre, minha garota, e prometo te fazer feliz.
- break;
+                    mensagem = "Cinco meses, como o tempo passou rápido, não é mesmo? Neste último mês, estamos em uma vibe muito leve. Estou conseguindo lidar com o luto, e você tem me ajudado, ajudado com tudo, na verdade. Quero que saiba que tudo o que estou fazendo hoje é por nós, por nosso futuro. Quero te proporcionar a vida que você merece, realizar todos os seus sonhos - uma casa na praia, livros, gatos, kkk. Nós vamos conseguir tudo isso juntos.\n\nAh, quase me esqueci, você é a mulher mais linda deste mundo. Não estou dizendo isso só porque você é minha namorada, não. Até mesmo antes de trocar uma palavra contigo, eu já admirava a sua beleza, seus olhos, kkkk, seus cabelos, sua boca, é tudo detalhadamente perfeito. Eu te amo sempre, minha garota, e prometo te fazer feliz.";
+                    break;
                 default:
                     mensagem = "Selecione um mês para ver a mensagem correspondente.";
             }
