@@ -16,12 +16,7 @@
             color: #e74c3c;
         }
         p {
-            color: #000; /* Mudança da cor para preto (#000) */
-        }
-        #mensagem-link {
-            color: #2ecc71;
-            text-decoration: none;
-            font-weight: bold;
+            color: #000;
         }
         .mes-container {
             display: flex;
@@ -31,7 +26,8 @@
         .mes {
             flex: 1;
             padding: 10px;
-            background-color: #fff;
+            background-color: #8e44ad; /* Cor roxa para as caixas dos meses */
+            color: #fff; /* Texto em branco */
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease-in-out;
@@ -47,7 +43,7 @@
 </head>
 <body>
 
-    <h1>PARA MINHA DEB</h1>
+    <h1>Parabéns pelos 5 meses juntos!</h1>
 
     <div class="mes-container">
         <div class="mes" onclick="mostrarMensagem(1)">Mês 1</div>
@@ -89,6 +85,7 @@
                     break;
                 default:
                     mensagem = "Selecione um mês para ver a mensagem correspondente.";
+
             }
 
             container.innerHTML = "<p>" + mensagem + "</p>";
