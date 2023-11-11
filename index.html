@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8f8f8;
+            background-color: #fff7f7; /* Cor de fundo mais suave */
             text-align: center;
             margin: 20px;
             color: #333;
@@ -15,6 +15,7 @@
         h1 {
             color: #e74c3c;
             position: relative;
+            margin-bottom: 10px;
         }
         h1::before,
         h1::after {
@@ -32,7 +33,9 @@
             right: -20px;
         }
         p {
-            color: #000;
+            color: #333; /* Cor do texto alterada para um tom mais escuro */
+            line-height: 1.6;
+            margin-bottom: 20px;
         }
         #mensagem-link {
             color: #2ecc71;
@@ -54,6 +57,7 @@
             transition: transform 0.3s ease-in-out;
             cursor: pointer;
             position: relative;
+            overflow: hidden;
         }
         .mes:hover {
             transform: scale(1.05);
@@ -68,11 +72,17 @@
         #audio-player {
             margin-top: 20px;
         }
+        #coracao-img {
+            width: 100px; /* Tamanho da imagem do coração */
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
 
-    <h1>Para minha Robótica Déb</h1>
+    <img id="coracao-img" src="caminho-para-sua-imagem-de-coracao.png" alt="Coração"> <!-- Adicione uma imagem de coração -->
+
+    <h1>Para minha Robótica Déb <3</h1>
 
     <div class="mes-container">
         <div class="mes" onclick="mostrarMensagem(1)">Mês 1</div>
@@ -122,3 +132,4 @@
 
 </body>
 </html>
+
